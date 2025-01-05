@@ -41,7 +41,7 @@ export default function Portfolio() {
               Frontend Developer
             </h2>
             <p className="max-w-[600px] text-muted-foreground text-lg">
-              I'm a frontend developer who builds modern web applications,
+              Im a frontend developer who builds modern web applications,
               focusing on user experience and performance, and creating
               solutions that solve real-world problems.
             </p>
@@ -195,7 +195,6 @@ function ProjectCard({
   link,
   image,
   technologies,
-  date,
 }: {
   title: string;
   description: string;
