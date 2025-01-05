@@ -25,7 +25,7 @@ export default function Portfolio() {
     <div className="bg-background font-mono scroll-smooth">
       <Nav />
       <main className="mx-auto max-w-7xl px-4">
-        {/* Hero Section */};
+        {/* Hero Section */}
         <section
           id="home"
           className="flex h-svh py-16 md:py-20 flex-col justify-center"
@@ -66,7 +66,13 @@ export default function Portfolio() {
               </div>
               <div className="flex gap-4">
                 <Button variant="default" asChild>
-                  <Link href="#projects">View Resume</Link>
+                  <Link
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Resume
+                  </Link>
                 </Button>
                 <Button variant="outline" asChild>
                   <Link href="#projects">View My Projects</Link>

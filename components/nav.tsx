@@ -9,15 +9,22 @@ const sections = [
   { id: "home", label: "Home", icon: Home, href: "/" },
   { id: "projects", label: "Projects", icon: FolderGit2, href: "#projects" },
   { id: "contact", label: "Contact", icon: Mail, href: "#contact" },
-  { id: "resume", label: "Resume", icon: Link2, href: "/resume" },
+  {
+    id: "resume",
+    label: "Resume",
+    icon: Link2,
+    href: "/resume.pdf",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
 ];
 
 export function Nav() {
   return (
     <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
       <nav className="flex items-center gap-2 px-4 py-2 bg-background/80 backdrop-blur-sm rounded-full border shadow-sm">
-        {sections.map(({ id, label, icon: Icon, href }) => (
-          <Link key={id} href={href} passHref>
+        {sections.map(({ id, label, icon: Icon, href, target, rel }) => (
+          <Link key={id} href={href} passHref target={target} rel={rel}>
             <Button
               variant="ghost"
               size="sm"
@@ -33,8 +40,14 @@ export function Nav() {
           </Link>
         ))}
         {/* Mobile Icons Only */}
-        {sections.map(({ id, icon: Icon, href }) => (
-          <Link key={`mobile-${id}`} href={href} passHref>
+        {sections.map(({ id, icon: Icon, href, target, rel }) => (
+          <Link
+            key={`mobile-${id}`}
+            href={href}
+            passHref
+            target={target}
+            rel={rel}
+          >
             <Button
               variant="ghost"
               size="icon"
