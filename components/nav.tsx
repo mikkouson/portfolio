@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { FolderGit2, Home, Link2, Mail, Sun } from "lucide-react";
+import { FolderGit2, Home, Link2, Mail } from "lucide-react";
 import Link from "next/link";
 import { ModeToggle } from "./theme/toggle";
 
