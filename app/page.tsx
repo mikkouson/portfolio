@@ -38,10 +38,10 @@ export default function Portfolio() {
               </h1>
             </div>
             <h2 className="text-3xl sm:text-4xl font-medium flex items-center gap-2">
-              Frontend Developer
+              Software Developer
             </h2>
             <p className="max-w-[600px] text-muted-foreground text-lg">
-              Im a frontend developer who builds modern web applications,
+              Im a software developer who builds modern web applications,
               focusing on user experience and performance, and creating
               solutions that solve real-world problems.
             </p>
