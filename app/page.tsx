@@ -67,7 +67,7 @@ export default function Portfolio() {
               <div className="flex gap-4">
                 <Button variant="default" asChild>
                   <Link
-                    href="/resume.pdf"
+                    href="/Uson, Leo Mikko R. - Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

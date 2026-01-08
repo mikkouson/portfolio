@@ -14,7 +14,7 @@ const sections = [
     id: "resume",
     label: "Resume",
     icon: Link2,
-    href: "/resume.pdf",
+    href: "/Uson, Leo Mikko R. - Resume.pdf",
     target: "_blank",
     rel: "noopener noreferrer",
   },
