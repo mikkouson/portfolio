@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { FolderGit2, Home, Link2, Mail, Sun } from "lucide-react";
 import Link from "next/link";
+import { ModeToggle } from "./theme/toggle";
 
 const sections = [
   { id: "home", label: "Home", icon: Home, href: "/" },
@@ -59,10 +60,7 @@ export function Nav() {
           </Link>
         ))}
         <div className="ml-2 h-6 w-px bg-border" />
-        <Button variant="ghost" size="icon" className="h-8 w-8">
-          <Sun className="h-4 w-4" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
+        <ModeToggle />
       </nav>
     </div>
   );
