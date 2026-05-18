@@ -38,7 +38,9 @@ export default function Portfolio() {
         >
           <div className="space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <div className="space-y-2">
-              <p className="text-lg font-medium text-primary tracking-wide uppercase">Hi, my name is</p>
+              <p className="text-lg font-medium text-primary tracking-wide uppercase">
+                Hi, my name is
+              </p>
               <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl xl:text-8xl font-display text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/70">
                 Leo Mikko Uson
               </h1>
@@ -47,7 +49,7 @@ export default function Portfolio() {
               Software Developer
             </h2>
             <p className="max-w-[650px] text-lg sm:text-xl leading-relaxed text-muted-foreground/90">
-              I'm a software developer who builds modern web applications,
+              I&apos;m a software developer who builds modern web applications,
               focusing on user experience and performance, and creating
               solutions that solve real-world problems.
             </p>
@@ -71,7 +73,11 @@ export default function Portfolio() {
                 </a>
               </div>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="rounded-full shadow-lg hover:shadow-primary/25 transition-all duration-300" asChild>
+                <Button
+                  size="lg"
+                  className="rounded-full shadow-lg hover:shadow-primary/25 transition-all duration-300"
+                  asChild
+                >
                   <Link
                     href="/Uson, Leo Mikko R. - Resume.pdf"
                     target="_blank"
@@ -80,7 +86,12 @@ export default function Portfolio() {
                     View Resume
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full backdrop-blur-md bg-background/50 hover:bg-muted/80 transition-all duration-300" asChild>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full backdrop-blur-md bg-background/50 hover:bg-muted/80 transition-all duration-300"
+                  asChild
+                >
                   <Link href="#projects">View My Projects</Link>
                 </Button>
               </div>
@@ -148,7 +159,7 @@ export default function Portfolio() {
                 "Developed a comprehensive Fixed Asset Monitoring System with financial depreciation tracking, audit logs, and automated PDF tag generation.",
                 "Engineered a purchase and vendor request system featuring multi-level approval workflows and automated routing for final accounting department sign-off.",
                 "Deployed a centralized Internal Testing & Examination System used to handle technical screenings for job applicants and employee evaluation assessments.",
-                "Modernized legacy database interfaces with responsive, minimalist layouts to optimize system workflow velocity and eliminate internal user data entry errors."
+                "Modernized legacy database interfaces with responsive, minimalist layouts to optimize system workflow velocity and eliminate internal user data entry errors.",
               ]}
             />
             <ExperienceCard
@@ -159,7 +170,7 @@ export default function Portfolio() {
               description={[
                 "Designed and developed a full-stack invoicing system using Next.js and Supabase.",
                 "Implemented complete CRUD functionality with a RESTful API architecture.",
-                "Enhanced the invoice creation process by building a user-friendly interface and efficient data handling."
+                "Enhanced the invoice creation process by building a user-friendly interface and efficient data handling.",
               ]}
             />
           </div>
@@ -202,8 +213,14 @@ export default function Portfolio() {
             <div className="flex justify-center group relative hidden md:flex">
               <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-secondary opacity-30 blur-xl group-hover:opacity-60 transition duration-1000"></div>
               <Avatar className="w-72 h-72 border-4 border-background shadow-2xl relative z-10 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-2">
-                <AvatarImage src="/profile.png" alt="Leo's profile picture" className="object-cover" />
-                <AvatarFallback className="text-4xl font-display">LM</AvatarFallback>
+                <AvatarImage
+                  src="/profile.png"
+                  alt="Leo's profile picture"
+                  className="object-cover"
+                />
+                <AvatarFallback className="text-4xl font-display">
+                  LM
+                </AvatarFallback>
               </Avatar>
             </div>
           </div>
@@ -214,15 +231,23 @@ export default function Portfolio() {
           className="py-24 flex flex-col items-center justify-center gap-8 text-center"
         >
           <div className="space-y-4">
-            <p className="text-primary font-medium tracking-wide uppercase">What's Next?</p>
-            <h2 className="text-4xl sm:text-5xl font-bold font-display">Get In Touch</h2>
+            <p className="text-primary font-medium tracking-wide uppercase">
+              What&apos;s Next?
+            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold font-display">
+              Get In Touch
+            </h2>
           </div>
           <p className="max-w-[500px] text-lg text-muted-foreground leading-relaxed">
-            I'm currently looking for new opportunities. Whether you have a
-            question or just want to say hi, I'll try my best to get back
+            I&apos;m currently looking for new opportunities. Whether you have a
+            question or just want to say hi, I&apos;ll try my best to get back
             to you!
           </p>
-          <Button size="lg" className="rounded-full shadow-lg shadow-primary/20 h-14 px-8 text-lg mt-4" asChild>
+          <Button
+            size="lg"
+            className="rounded-full shadow-lg shadow-primary/20 h-14 px-8 text-lg mt-4"
+            asChild
+          >
             <Link href="mailto:usonleomikko@gmail.com">Say Hello 👋</Link>
           </Button>
         </section>
@@ -285,15 +310,29 @@ function ProjectCard({
         <div className="space-y-6 pt-4 mt-auto">
           <div className="flex flex-wrap items-center gap-2">
             {technologies.split(",").map((tech) => (
-              <Badge key={tech.trim()} variant="secondary" className="bg-secondary/50 hover:bg-primary/20 border-primary/10 text-xs">
+              <Badge
+                key={tech.trim()}
+                variant="secondary"
+                className="bg-secondary/50 hover:bg-primary/20 border-primary/10 text-xs"
+              >
                 {tech.trim()}
               </Badge>
             ))}
           </div>
           <div className="flex gap-4">
             {link && (
-              <Button asChild size="sm" variant="default" className="rounded-full shadow-lg hover:shadow-primary/25">
-                <Link href={link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Button
+                asChild
+                size="sm"
+                variant="default"
+                className="rounded-full shadow-lg hover:shadow-primary/25"
+              >
+                <Link
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
                   <span className="font-medium">View Project</span>
                   <ExternalLink size={16} />
                 </Link>
@@ -324,12 +363,22 @@ function ExperienceCard({
       <div className="space-y-5">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="space-y-1.5">
-            <h3 className="text-xl font-bold font-display text-foreground tracking-tight">{role}</h3>
+            <h3 className="text-xl font-bold font-display text-foreground tracking-tight">
+              {role}
+            </h3>
             <p className="text-base text-primary font-medium">
-              {company} <span className="text-muted-foreground font-normal ml-1">• {type}</span>
+              {company}{" "}
+              <span className="text-muted-foreground font-normal ml-1">
+                • {type}
+              </span>
             </p>
           </div>
-          <Badge variant="secondary" className="bg-secondary text-secondary-foreground shrink-0">{date}</Badge>
+          <Badge
+            variant="secondary"
+            className="bg-secondary text-secondary-foreground shrink-0"
+          >
+            {date}
+          </Badge>
         </div>
         <ul className="space-y-2.5 text-sm md:text-base text-muted-foreground">
           {description.map((item, i) => (
