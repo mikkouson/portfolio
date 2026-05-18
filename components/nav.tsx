@@ -2,13 +2,24 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { FolderGit2, Home, Link2, Mail } from "lucide-react";
+import { Briefcase, FolderGit2, Home, Link2, LucideIcon, Mail } from "lucide-react";
 import Link from "next/link";
 import { ModeToggle } from "./theme/toggle";
+import { HTMLAttributeAnchorTarget } from "react";
 
-const sections = [
+interface Section {
+  id: string;
+  label: string;
+  icon: LucideIcon;
+  href: string;
+  target?: HTMLAttributeAnchorTarget;
+  rel?: string;
+}
+
+const sections: Section[] = [
   { id: "home", label: "Home", icon: Home, href: "/" },
   { id: "projects", label: "Projects", icon: FolderGit2, href: "#projects" },
+  { id: "experience", label: "Experience", icon: Briefcase, href: "#experience" },
   { id: "contact", label: "Contact", icon: Mail, href: "#contact" },
   {
     id: "resume",
